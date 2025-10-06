@@ -1,0 +1,12 @@
+---
+title: "Analysis of 1 Million Sales Data"
+author: "Satoshi Matsumoto"
+date: "2025-10-06"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+This was a case study using ROSSMANN public data for sales predictions. \
+
+```{}
+```
