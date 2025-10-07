@@ -15,4 +15,4 @@ about:
       href: https://github.com/satoshi-F13
 ---
 
-Satoshi Matsumoto is a Data Analyst and business strategist specializing in automated reporting solutions and data-driven decision-making. He develops custom Shiny apps that transform complex data into actionable insights for clients across Europe, from chemical companies to industrial manufacturers.
+I'm Satoshi, a Data Analyst living in Piedmont, Italy. I help local businesses and organizations make sense of their data by building practical tools they can actually use. I work with R and various data science tools, such as RStudio IDE, Quarto, and Shiny app. I'm fluent in both Japanese and English and brushing up my Italian language capacity. My goal is straightforward: take your data challenges and turn them into solutions that make your work easier.

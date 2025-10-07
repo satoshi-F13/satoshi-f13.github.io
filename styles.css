@@ -1,6 +1,286 @@
-/* css styles */
+/* ==========================================================================
+   S.Matsumoto Brand Styles
+   ========================================================================== */
 
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap');
+@import url('https://fonts.bunny.net/css?family=tsukimi-rounded:300,400,500,600,700');
+
+/* ==========================================================================
+   CSS Custom Properties (Brand Colors & Typography)
+   ========================================================================== */
+
+:root {
+  /* Brand Colors */
+  --color-koshian: #775457;
+  --color-kanten: #F1F7FA;
+  --color-sakuranbo: #E94C64;
+  --color-mikan: #F6AF70;
+  --color-kuromitsu: #4C3B0D;
+  --color-hakutou: #FDE6C2;
+  --color-aibiroudo: #005E81;
+  --color-sencha: #CCD273;
+  --color-koicha: #5B6D2F;
+  --color-touki: #D9DFE2;
+  
+  /* Semantic Color Assignments */
+  --color-foreground: var(--color-aibiroudo);
+  --color-background: var(--color-kanten);
+  --color-primary: var(--color-koshian);
+  --color-secondary: var(--color-hakutou);
+  --color-success: var(--color-sencha);
+  --color-info: var(--color-touki);
+  --color-warning: var(--color-mikan);
+  --color-danger: var(--color-sakuranbo);
+  --color-light: var(--color-kanten);
+  --color-dark: var(--color-kuromitsu);
+  
+  /* Typography */
+  --font-base: "Tsukimi Rounded", sans-serif;
+  --font-headings: "Tsukimi Rounded", sans-serif;
+  --font-monospace: "Noto Serif JP", serif;
+  
+  --line-height-base: 1.6;
+  --font-weight-headings: 600;
+  
+  /* Navbar */
+  --navbar-fg: #ffffff;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
 
 body {
-  background-color: #f5e6eb;
+  font-family: var(--font-base);
+  line-height: var(--line-height-base);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
 }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-headings);
+  font-weight: var(--font-weight-headings);
+  color: var(--color-primary);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-sencha);
+  text-decoration: underline;
+}
+
+/* Monospace/Code */
+code, pre, kbd, samp {
+  font-family: var(--font-monospace);
+  font-size: 1em;
+}
+
+/* ==========================================================================
+   Bootstrap Component Overrides
+   ========================================================================== */
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-koshian);
+  border-color: var(--color-koshian);
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-kuromitsu);
+}
+
+.btn-success {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+  color: var(--color-kuromitsu);
+}
+
+.btn-info {
+  background-color: var(--color-info);
+  border-color: var(--color-info);
+  color: var(--color-kuromitsu);
+}
+
+.btn-warning {
+  background-color: var(--color-warning);
+  border-color: var(--color-warning);
+  color: var(--color-kuromitsu);
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-primary);
+  color: var(--navbar-fg);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--navbar-fg);
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--color-sencha);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--color-secondary);
+}
+
+/* Navbar Home link and explore icon - better visibility */
+.navbar-nav .nav-link[href="#home"],
+.navbar-nav .nav-link[href="/"],
+.navbar .bi-house-door,
+.navbar .fa-home,
+.navbar-nav .nav-link .bi,
+.navbar-nav .nav-link .fa {
+  color: var(--color-sencha);
+}
+
+.navbar-nav .nav-link[href="#home"]:hover,
+.navbar-nav .nav-link[href="/"]:hover {
+  color: var(--color-hakutou);
+}
+
+/* Alerts */
+.alert-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.alert-secondary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-kuromitsu);
+}
+
+.alert-success {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+  color: var(--color-kuromitsu);
+}
+
+.alert-info {
+  background-color: var(--color-info);
+  border-color: var(--color-info);
+  color: var(--color-kuromitsu);
+}
+
+.alert-warning {
+  background-color: var(--color-warning);
+  border-color: var(--color-warning);
+  color: var(--color-kuromitsu);
+}
+
+.alert-danger {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+  color: white;
+}
+
+/* Badges */
+.badge-primary {
+  background-color: var(--color-primary);
+}
+
+.badge-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-kuromitsu);
+}
+
+.badge-success {
+  background-color: var(--color-success);
+  color: var(--color-kuromitsu);
+}
+
+.badge-info {
+  background-color: var(--color-info);
+  color: var(--color-kuromitsu);
+}
+
+.badge-warning {
+  background-color: var(--color-warning);
+  color: var(--color-kuromitsu);
+}
+
+.badge-danger {
+  background-color: var(--color-danger);
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+/* Background Colors */
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
+.bg-success { background-color: var(--color-success) !important; }
+.bg-info { background-color: var(--color-info) !important; }
+.bg-warning { background-color: var(--color-warning) !important; }
+.bg-danger { background-color: var(--color-danger) !important; }
+.bg-light { background-color: var(--color-light) !important; }
+.bg-dark { background-color: var(--color-dark) !important; }
+
+/* Text Colors */
+.text-primary { color: var(--color-primary) !important; }
+.text-secondary { color: var(--color-secondary) !important; }
+.text-success { color: var(--color-success) !important; }
+.text-info { color: var(--color-info) !important; }
+.text-warning { color: var(--color-warning) !important; }
+.text-danger { color: var(--color-danger) !important; }
+.text-light { color: var(--color-light) !important; }
+.text-dark { color: var(--color-dark) !important; }
+
+/* Brand-specific Color Classes */
+.bg-koshian { background-color: var(--color-koshian) !important; }
+.bg-kanten { background-color: var(--color-kanten) !important; }
+.bg-sakuranbo { background-color: var(--color-sakuranbo) !important; }
+.bg-mikan { background-color: var(--color-mikan) !important; }
+.bg-kuromitsu { background-color: var(--color-kuromitsu) !important; }
+.bg-hakutou { background-color: var(--color-hakutou) !important; }
+.bg-aibiroudo { background-color: var(--color-aibiroudo) !important; }
+.bg-sencha { background-color: var(--color-sencha) !important; }
+.bg-koicha { background-color: var(--color-koicha) !important; }
+.bg-touki { background-color: var(--color-touki) !important; }
+
+.text-koshian { color: var(--color-koshian) !important; }
+.text-kanten { color: var(--color-kanten) !important; }
+.text-sakuranbo { color: var(--color-sakuranbo) !important; }
+.text-mikan { color: var(--color-mikan) !important; }
+.text-kuromitsu { color: var(--color-kuromitsu) !important; }
+.text-hakutou { color: var(--color-hakutou) !important; }
+.text-aibiroudo { color: var(--color-aibiroudo) !important; }
+.text-sencha { color: var(--color-sencha) !important; }
+.text-koicha { color: var(--color-koicha) !important; }
+.text-touki { color: var(--color-touki) !important; }

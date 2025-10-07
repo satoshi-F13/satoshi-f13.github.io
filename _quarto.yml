@@ -18,10 +18,11 @@ website:
         href: https://github.com/satoshi-F13
       - icon: mastodon
         href: https://mastodon.social/@satoshi_F13
+      - icon: bluesky
+        href: https://bsky.app/profile/s-mazmoto.bsky.social    
 format:
   html:
     theme:
-      - cosmo
       - brand
     css: styles.css
 
