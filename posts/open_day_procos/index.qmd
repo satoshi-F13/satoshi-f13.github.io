@@ -7,11 +7,11 @@ categories: [pharma, chemistry, manufacturing]
 
 # Visited PROCOS' 80th Anniversary Open Day 🧪
 
-Nestled at the feet of the Alps mountains and cradled by expansive rice fields, the pharma-chemical company PROCOS stands like a modern fortress of science—where ancient landscapes meet cutting-edge chemistry. Just attended their spectacular open day celebrating 80 years of operation since their founding in 1945. Over 2,000 visitors explored the facility alongside me, and as a data analyst, I couldn't help but dig into the numbers behind what I saw.
+Nestled at the feet of the Alps mountains and cradled by expansive rice fields, the pharma-chemical company PROCOS in Cameri - Italy, stands like a modern fortress of science—where ancient landscapes meet cutting-edge chemistry. Just attended their spectacular open day celebrating 80 years of operation since their founding in 1945. Over 2,000 visitors explored the facility alongside me, and as a data analyst, I couldn't help but dig into the numbers behind what I saw.
 
 ![](thumbnail.jpg){width="600"}
 
-#### **The Scale is Impressive**
+## **The Scale is Impressive**
 
 The facility operates 24/7 with 500+ employees managing five independent departments across more than 50 production lines. Their multi-purpose production capabilities include:
 
@@ -35,7 +35,7 @@ procos_colors <- c("#61A60E", "#7C563A", "#61A60E", "#99ccff", "#cce5ff")
 # 1. Department and Production Lines (Waffle-style visualization)
 dept_data <- data.frame(
   category = c("Departments", "Production Lines", "Employees (x100)"),
-  count = c(5, 50, 5),
+  count = c(6, 50, 5),
   color = c(procos_colors[1], procos_colors[2], procos_colors[3])
 )
 
@@ -121,13 +121,13 @@ p2
 output_plot
 ```
 
-#### **Technology That Stands Out**
+## **Technology That Stands Out**
 
-**:** Walking through their production areas, I was particularly impressed by their Flow Chemistry Technology and High Pressure Hydrogenators (capable of reaching 60 bar). Real-time monitoring systems track hundreds of process parameters continuously across all lines.
+Walking through their production areas, I was particularly impressed by their Flow Chemistry Technology and High Pressure Hydrogenators (capable of reaching 60 bar). Real-time monitoring systems track hundreds of process parameters continuously across all lines.
 
-#### **Global Reach, Italian Roots**
+## **Global Reach, Italian Roots**
 
-**:**Acquired by a Japanese company in 2006, PROCOS maintains its headquarters and R&D center here in Italy while operating sales offices across five continents.\
+Acquired by a Japanese company in 2006, PROCOS maintains its headquarters and R&D center here in Italy while operating sales offices across five continents.\
 
 ```{r}
 #| echo: false
@@ -217,11 +217,12 @@ legend("bottomleft",
        cex = 0.8)
 ```
 
-**Looking Forward**
+## **Looking Forward**
 
-According to the news article, in the Osaka EXPO 2025, the company announced [a bold €150 million investment plan over the next 8 years](https://www.ansa.it//piemonte/notizie/2025/09/29/annuncio-al-padiglione-italia-allexpo150-milioni-in-piemonte_8dd23b0b-dc49-4602-afa2-aa8cd1cdb73f.html)—a clear signal of their commitment to expanding capacity and technological capabilities in the specialty pharmaceutical chemicals sector.
+According to the news article, in the Osaka EXPO 2025, the company announced [a bold €150 million investment plan over the next 8 years](https://www.ansa.it//piemonte/notizie/2025/09/29/annuncio-al-padiglione-italia-allexpo150-milioni-in-piemonte_8dd23b0b-dc49-4602-afa2-aa8cd1cdb73f.html)—a clear signal of their commitment to expanding capacity and technological capabilities in the specialty pharmaceutical chemicals sector.\
+![Touring to new production site, R11](tour_r11.jpg){width="450"}
 
-Eight decades of chemistry excellence, and they're getting started to the brave future.
+Eight decades of chemistry excellence, and they're getting started to their GRIT-Future.
 
 \
 \
