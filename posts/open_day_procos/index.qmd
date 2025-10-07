@@ -1,0 +1,227 @@
+---
+title: "Factory Open Day - PROCOS"
+author: "Satoshi"
+date: "2025-10-05"
+categories: [pharma, chemistry, manufacturing]
+---
+
+# Visited PROCOS' 80th Anniversary Open Day 🧪
+
+Nestled at the feet of the Alps mountains and cradled by expansive rice fields, the pharma-chemical company PROCOS stands like a modern fortress of science—where ancient landscapes meet cutting-edge chemistry. Just attended their spectacular open day celebrating 80 years of operation since their founding in 1945. Over 2,000 visitors explored the facility alongside me, and as a data analyst, I couldn't help but dig into the numbers behind what I saw.
+
+![](thumbnail.jpg){width="600"}
+
+#### **The Scale is Impressive**
+
+The facility operates 24/7 with 500+ employees managing five independent departments across more than 50 production lines. Their multi-purpose production capabilities include:
+
+```{r}
+#| echo: false
+
+# PROCOS Facility Overview - Reader-Friendly Infographic
+# Install required packages if needed:
+# install.packages(c("ggplot2", "gridExtra", "scales"))
+
+library(ggplot2)
+library(gridExtra)
+library(scales)
+
+# Set a clean theme
+theme_set(theme_minimal(base_size = 14))
+
+# Color palette
+procos_colors <- c("#61A60E", "#7C563A", "#61A60E", "#99ccff", "#cce5ff")
+
+# 1. Department and Production Lines (Waffle-style visualization)
+dept_data <- data.frame(
+  category = c("Departments", "Production Lines", "Employees (x100)"),
+  count = c(5, 50, 5),
+  color = c(procos_colors[1], procos_colors[2], procos_colors[3])
+)
+
+p1 <- ggplot(dept_data, aes(x = reorder(category, count), y = count, fill = category)) +
+  geom_col(width = 0.7, show.legend = FALSE) +
+  geom_text(aes(label = ifelse(category == "Employees (x100)", "500+", count)), 
+            hjust = -0.2, size = 8, fontface = "bold", color = "#333333") +
+  scale_fill_manual(values = dept_data$color) +
+  coord_flip() +
+  labs(title = "Facility Scale", 
+       subtitle = "24/7 Operations",
+       x = NULL, y = NULL) +
+  theme(
+    plot.title = element_text(face = "bold", size = 18, color = "#333333"),
+    plot.subtitle = element_text(size = 14, color = "#666666"),
+    axis.text.y = element_text(size = 14, face = "bold", color = "#333333"),
+    axis.text.x = element_blank(),
+    panel.grid = element_blank(),
+    plot.margin = margin(20, 20, 20, 20)
+  ) +
+  ylim(0, max(dept_data$count) * 1.2)
+
+# 2. Production Capacity (Donut chart approach)
+capacity_data <- data.frame(
+  category = c("Reactor \nCapacity", "Accessory \nEquipment"),
+  volume = c(560, 200),
+  color = c(procos_colors[1], procos_colors[4])
+)
+
+capacity_data$fraction <- capacity_data$volume / sum(capacity_data$volume)
+capacity_data$ymax <- cumsum(capacity_data$fraction)
+capacity_data$ymin <- c(0, head(capacity_data$ymax, n = -1))
+capacity_data$label_position <- (capacity_data$ymax + capacity_data$ymin) / 2
+capacity_data$label <- paste0(capacity_data$category, "\n", capacity_data$volume, " m³")
+
+p2 <- ggplot(capacity_data, aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = category)) +
+  geom_rect(show.legend = FALSE) +
+  geom_text(x = 4.5, aes(y = label_position, label = label), 
+            size = 5, fontface = "bold", color = "#333333") +
+  scale_fill_manual(values = capacity_data$color) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4.5)) +
+  labs(title = "Production Capacity",
+       subtitle = "Total: 760 m³") +
+  theme_void() +
+  theme(
+    plot.title = element_text(face = "bold", size = 18, color = "#333333", hjust = 0.5),
+    plot.subtitle = element_text(size = 14, color = "#666666", hjust = 0.5),
+    plot.margin = margin(20, 20, 20, 20)
+  )
+
+# 3. Annual Output (Single large metric)
+output_plot <- ggplot() +
+  annotate("text", x = 0.5, y = 0.7, 
+           label = "2,500+", 
+           size = 24, fontface = "bold", color = procos_colors[1]) +
+  annotate("text", x = 0.5, y = 0.5, 
+           label = "tonnes/year", 
+           size = 10, color = "#666666") +
+  annotate("text", x = 0.5, y = 0.35, 
+           label = "APIs & Pharmaceutical\nIntermediates", 
+           size = 6, color = "#999999", lineheight = 0.9) +
+  labs(title = "Annual Output") +
+  theme_void() +
+  theme(
+    plot.title = element_text(face = "bold", size = 18, color = "#333333", hjust = 0.5),
+    plot.margin = margin(20, 20, 20, 20)
+  ) +
+  xlim(0, 1) + ylim(0, 1)
+
+# Combine all plots with better spacing
+# grid.arrange(
+#   p1, p2, output_plot,
+#   ncol = 3,
+#   heights = c(1, 1, 1),
+#   top = grid::textGrob("PROCOS Facility Overview - 80 Years of Excellence", 
+#                        gp = grid::gpar(fontsize = 20, fontface = "bold", col = "#333333"),
+#                        vjust = 1)
+# )
+
+p1
+p2
+output_plot
+```
+
+#### **Technology That Stands Out**
+
+**:** Walking through their production areas, I was particularly impressed by their Flow Chemistry Technology and High Pressure Hydrogenators (capable of reaching 60 bar). Real-time monitoring systems track hundreds of process parameters continuously across all lines.
+
+#### **Global Reach, Italian Roots**
+
+**:**Acquired by a Japanese company in 2006, PROCOS maintains its headquarters and R&D center here in Italy while operating sales offices across five continents.\
+
+```{r}
+#| echo: false
+
+# PROCOS Global Office Connection Map
+# Install required packages if needed:
+# install.packages(c("maps", "geosphere"))
+
+library(geosphere)
+library(maps)
+library(ggrepel)
+
+# Define office locations
+locations <- data.frame(
+  city = c("Italy", "New York", "Germany", "Slovakia", "India", "Tokyo"),
+  lon = c(8.6218, -74.0060, 10.4515, 19.6990, 78.9629, 139.6917),
+  lat = c(45.4469, 40.7128, 51.1657, 48.6690, 20.5937, 35.6762),
+  type = c("HQ/R&D/Factory", "Sales", "Sales", "Sales", "Sales", "Sales"),
+  stringsAsFactors = FALSE
+)
+
+# Create connection routes from HQ (Italy) to all sales offices
+hq_idx <- which(locations$city == "Italy")
+sales_idx <- which(locations$type == "Sales")
+
+# Generate great circle routes
+all_routes <- data.frame()
+
+for(i in sales_idx) {
+  route <- gcIntermediate(
+    c(locations$lon[hq_idx], locations$lat[hq_idx]),
+    c(locations$lon[i], locations$lat[i]),
+    n = 100,
+    addStartEnd = TRUE,
+    sp = FALSE
+  )
+  route <- as.data.frame(route)
+  route$group <- paste(locations$city[hq_idx], locations$city[i], sep = "-")
+  all_routes <- rbind(all_routes, route)
+}
+
+# Create the map
+par(mar = c(0, 0, 2, 0), bg = "#f0f0f0")
+
+# Plot base world map
+maps::map(database = "world", col = "#e8e8e8", fill = TRUE, border = "#cccccc", 
+    ylim = c(10, 70), xlim = c(-100, 150))
+
+# Add connection lines
+for(group in unique(all_routes$group)) {
+  route_data <- all_routes[all_routes$group == group, ]
+  lines(route_data$lon, route_data$lat, 
+        col = "#7AB8D7", lwd = 1.5, lty = 1)
+}
+
+# Add office points
+points(locations$lon[hq_idx], locations$lat[hq_idx], 
+       pch = 21, cex = 3, col = "#61A60E", bg = "#61A60E", lwd = 2)
+points(locations$lon[sales_idx], locations$lat[sales_idx], 
+       pch = 21, cex = 2, col = "#7C563A", bg = "#7C563A", lwd = 2)
+
+# Add labels
+text(locations$lon[hq_idx], locations$lat[hq_idx], 
+     labels = "Italy\n(HQ/R&D/Factory)", 
+     pos = 1, cex = 0.75, font = 2, col = "#61A60E")
+
+for(i in sales_idx) {
+  text(locations$lon[i], locations$lat[i], 
+       labels = paste0(locations$city[i], "\n(Sales)"), 
+       pos = 3, cex = 0.7, col = "#7C563A")
+}
+
+# Add title
+title(main = "PROCOS Global Office Network", 
+      cex.main = 1.5, font.main = 2, col.main = "#333333")
+
+# Add legend
+legend("bottomleft", 
+       legend = c("HQ/R&D/Factory", "Sales Office", "Connection"), 
+       pch = c(21, 21, NA), 
+       lty = c(NA, NA, 1),
+       col = c("#61A60E", "#7C563A", "#7AB8D7"),
+       pt.bg = c("#61A60E", "#7C563A", NA),
+       pt.cex = c(2, 1.5, NA),
+       lwd = c(2, 2, 1.5),
+       bty = "n",
+       cex = 0.8)
+```
+
+**Looking Forward**
+
+According to the news article, in the Osaka EXPO 2025, the company announced [a bold €150 million investment plan over the next 8 years](https://www.ansa.it//piemonte/notizie/2025/09/29/annuncio-al-padiglione-italia-allexpo150-milioni-in-piemonte_8dd23b0b-dc49-4602-afa2-aa8cd1cdb73f.html)—a clear signal of their commitment to expanding capacity and technological capabilities in the specialty pharmaceutical chemicals sector.
+
+Eight decades of chemistry excellence, and they're getting started to the brave future.
+
+\
+\

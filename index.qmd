@@ -1,8 +1,8 @@
 ---
-title: "About"
-image: casual_matsumoto.png
+title: ""
+image: casual_2.jpg
 about:
-  template: jolla
+  template: broadside
   links:
     - icon: mastodon
       text: Mastodon
@@ -15,4 +15,30 @@ about:
       href: https://github.com/satoshi-F13
 ---
 
-I'm Satoshi, a Data Analyst living in Piedmont, Italy. I help local businesses and organizations make sense of their data by building practical tools they can actually use. I work with R and various data science tools, such as RStudio IDE, Quarto, and Shiny app. I'm fluent in both Japanese and English and brushing up my Italian language capacity. My goal is straightforward: take your data challenges and turn them into solutions that make your work easier.
+# About This Blog
+
+Welcome! I'm a data analyst who believes that numbers tell stories—and those stories are all around us.
+
+**What You'll Find Here**
+
+This blog is my digital notebook where I document experiences and insights through the lens of data analytics. Whether I'm attending a local community event, touring a manufacturing facility, or exploring industry trends, I approach each experience with curiosity about the data behind it.
+
+**My Focus Areas**
+
+I write primarily about two areas that fascinate me:
+
+**Local Events:** I explore how data shapes and reflects our community experiences. What can attendance patterns tell us? How do local initiatives measure success? I dig into the numbers that others might overlook.
+
+**Manufacturing Industry:** I'm particularly drawn to how data drives modern manufacturing—production efficiency, supply chain analytics, quality control metrics, and market positioning. I visit facilities, attend open days, and analyze industry trends to understand how companies leverage data to stay competitive.
+
+**Why Microblogging?**
+
+I keep my posts concise and scannable because I know your time is valuable. Each entry is designed to deliver insights quickly—think data-driven observations you can read with your morning tea. No lengthy essays, just focused snapshots backed by numbers.
+
+**My Approach**
+
+I combine firsthand observations with data research, always citing my sources and showing my methodology. This isn't just about sharing what I saw—it's about understanding what the data reveals about our world.
+
+Thanks for stopping by. I hope you find something useful, interesting, or thought-provoking here.
+
+*Feel free to connect with me on social media. I'm always interested in discussing data, manufacturing, or local community insights.*

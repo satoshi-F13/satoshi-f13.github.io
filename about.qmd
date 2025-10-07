@@ -1,18 +1,18 @@
 ---
-title: "About"
-image: profile.jpg
+title: "About Me"
+image: casual_matsumoto.png
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    - icon: mastodon
+      text: Mastodon
+      href: https://mastodon.social/@satoshi_F13
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/satoshi-m-b73865146/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/satoshi-F13
 ---
 
-About this blog
+I'm Satoshi, a Data Analyst living in Piedmont, Italy. I help local businesses and organizations make sense of their data by building practical tools they can actually use. I work with R and various data science tools, such as RStudio IDE, Quarto, and Shiny app. My goal is straightforward: take your data challenges and turn them into solutions that make your work easier.

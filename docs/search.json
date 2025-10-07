@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About",
+    "title": "About This Blog",
     "section": "",
-    "text": "I’m Satoshi, a Data Analyst living in Piedmont, Italy. I help local businesses and organizations make sense of their data by building practical tools they can actually use. I work with R and various data science tools, such as RStudio IDE, Quarto, and Shiny app. I’m fluent in both Japanese and English and brushing up my Italian language capacity. My goal is straightforward: take your data challenges and turn them into solutions that make your work easier."
+    "text": "About This Blog\nWelcome! I’m a data analyst who believes that numbers tell stories—and those stories are all around us.\nWhat You’ll Find Here\nThis blog is my digital notebook where I document experiences and insights through the lens of data analytics. Whether I’m attending a local community event, touring a manufacturing facility, or exploring industry trends, I approach each experience with curiosity about the data behind it.\nMy Focus Areas\nI write primarily about two areas that fascinate me:\nLocal Events: I explore how data shapes and reflects our community experiences. What can attendance patterns tell us? How do local initiatives measure success? I dig into the numbers that others might overlook.\nManufacturing Industry: I’m particularly drawn to how data drives modern manufacturing—production efficiency, supply chain analytics, quality control metrics, and market positioning. I visit facilities, attend open days, and analyze industry trends to understand how companies leverage data to stay competitive.\nWhy Microblogging?\nI keep my posts concise and scannable because I know your time is valuable. Each entry is designed to deliver insights quickly—think data-driven observations you can read with your morning tea. No lengthy essays, just focused snapshots backed by numbers.\nMy Approach\nI combine firsthand observations with data research, always citing my sources and showing my methodology. This isn’t just about sharing what I saw—it’s about understanding what the data reveals about our world.\nThanks for stopping by. I hope you find something useful, interesting, or thought-provoking here.\nFeel free to connect with me on social media. I’m always interested in discussing data, manufacturing, or local community insights."
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -16,14 +16,14 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this blog"
+    "text": "I’m Satoshi, a Data Analyst living in Piedmont, Italy. I help local businesses and organizations make sense of their data by building practical tools they can actually use. I work with R and various data science tools, such as RStudio IDE, Quarto, and Shiny app. My goal is straightforward: take your data challenges and turn them into solutions that make your work easier."
   },
   {
     "objectID": "portfolio.html",
     "href": "portfolio.html",
-    "title": "My Portfolio",
+    "title": "Portfolio",
     "section": "",
     "text": "Analysis of 1 Million Sales Data\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
   },
@@ -33,5 +33,33 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Factory Open Day - PROCOS\n\n\n\npharma\n\nchemistry\n\nmanufacturing\n\n\n\n\n\n\n\n\n\nOct 5, 2025\n\n\nSatoshi\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "portfolios/order_app_case/index.html",
+    "href": "portfolios/order_app_case/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "portfolios/1m_sales_forecast/index.html",
+    "href": "portfolios/1m_sales_forecast/index.html",
+    "title": "Analysis of 1 Million Sales Data",
+    "section": "",
+    "text": "This was a case study using ROSSMANN public data for sales predictions."
+  },
+  {
+    "objectID": "posts/open_day_procos/index.html",
+    "href": "posts/open_day_procos/index.html",
+    "title": "Factory Open Day - PROCOS",
+    "section": "",
+    "text": "Visited PROCOS’ 80th Anniversary Open Day 🧪\nNestled at the feet of the Alps mountains and cradled by expansive rice fields, the pharma-chemical company PROCOS stands like a modern fortress of science—where ancient landscapes meet cutting-edge chemistry. Just attended their spectacular open day celebrating 80 years of operation since their founding in 1945. Over 2,000 visitors explored the facility alongside me, and as a data analyst, I couldn’t help but dig into the numbers behind what I saw.\n\n\nThe Scale is Impressive\nThe facility operates 24/7 with 500+ employees managing five independent departments across more than 50 production lines. Their multi-purpose production capabilities include:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTechnology That Stands Out\n: Walking through their production areas, I was particularly impressed by their Flow Chemistry Technology and High Pressure Hydrogenators (capable of reaching 60 bar). Real-time monitoring systems track hundreds of process parameters continuously across all lines.\n\n\nGlobal Reach, Italian Roots\n:Acquired by a Japanese company in 2006, PROCOS maintains its headquarters and R&D center here in Italy while operating sales offices across five continents.\n\n\n\n\n\n\n\n\n\n\nLooking Forward\nAccording to the news article, in the Osaka EXPO 2025, the company announced a bold €150 million investment plan over the next 8 years—a clear signal of their commitment to expanding capacity and technological capabilities in the specialty pharmaceutical chemicals sector.\nEight decades of chemistry excellence, and they’re getting started to the brave future."
   }
 ]

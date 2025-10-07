@@ -8,8 +8,8 @@ website:
     left: 
       - text: "Home"
         file: index.qmd
-      - text: "Portfolio"
-        file: portfolio.qmd
+      # - text: "Portfolio"
+      #   file: portfolio.qmd
       - text: "Blog"
         file: blog.qmd
     right:
