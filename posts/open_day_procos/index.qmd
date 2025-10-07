@@ -7,7 +7,7 @@ categories: [pharma, chemistry, manufacturing]
 
 # Visited PROCOS' 80th Anniversary Open Day 🧪
 
-Nestled at the feet of the Alps mountains and cradled by expansive rice fields, the pharma-chemical company PROCOS in Cameri - Italy, stands like a modern fortress of science—where ancient landscapes meet cutting-edge chemistry. Just attended their spectacular open day celebrating 80 years of operation since their founding in 1945. Over 2,000 visitors explored the facility alongside me, and as a data analyst, I couldn't help but dig into the numbers behind what I saw.
+Nestled at the feet of the Alps mountains and cradled by expansive rice fields, the pharma-chemical company PROCOS in Cameri-Italy, stands like a modern fortress of science—where ancient landscapes meet cutting-edge chemistry. Just attended their spectacular open day celebrating 80 years of operation since their founding in 1945. Over 2,000 visitors explored the facility alongside me, and as a data analyst, I couldn't help but dig into the numbers behind what I saw.
 
 ![](thumbnail.jpg){width="600"}
 
