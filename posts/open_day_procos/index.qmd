@@ -17,20 +17,58 @@ The facility operates 24/7 with 500+ employees managing five independent departm
 
 ```{r}
 #| echo: false
+#| output: false
 
 # PROCOS Facility Overview - Reader-Friendly Infographic
-# Install required packages if needed:
 # install.packages(c("ggplot2", "gridExtra", "scales"))
 
 library(ggplot2)
 library(gridExtra)
 library(scales)
+library(systemfonts)
+# Using showtext (recommended for web fonts)
+library(showtext)
+library(waffle)
+
+
+
+font_add(
+  family = "Tsukimi-Rounded",
+  regular = "C:/Users/satos/Documents/GitHub/satoshi-f13.github.io/assets/TsukimiRounded-Regular.ttf",
+  bold = "C:/Users/satos/Documents/GitHub/satoshi-f13.github.io/assets/TsukimiRounded-Bold.ttf"
+)
+
+```
+
+```{r}
+#| echo: false
+showtext_auto()
+
+update_geom_defaults(
+  geom = "text",
+  aes(family = "Tsukimi-Rounded")
+)
+# Also useful for other text geoms
+update_geom_defaults("label", aes(family = "Tsukimi-Rounded"))
+
 
 # Set a clean theme
-theme_set(theme_minimal(base_size = 14))
+theme_set(
+  theme_minimal(
+    base_size = 14,
+    base_family = "Tsukimi-Rounded"
+  ) +
+  theme(
+    plot.background = element_rect(fill = "#F1F7FA", color = NA),
+    panel.background = element_rect(fill = "#F1F7FA", color = NA),
+    legend.background = element_rect(fill = "#F1F7FA", color = NA)
+  )
+)
+
 
 # Color palette
-procos_colors <- c("#61A60E", "#7C563A", "#61A60E", "#99ccff", "#cce5ff")
+procos_colors <- c("#94bfa2", "#7C563A", "#61A60E", "#99ccff", "#cce5ff")
+
 
 # 1. Department and Production Lines (Waffle-style visualization)
 dept_data <- data.frame(
@@ -71,22 +109,27 @@ capacity_data$ymin <- c(0, head(capacity_data$ymax, n = -1))
 capacity_data$label_position <- (capacity_data$ymax + capacity_data$ymin) / 2
 capacity_data$label <- paste0(capacity_data$category, "\n", capacity_data$volume, " m³")
 
-p2 <- ggplot(capacity_data, aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = category)) +
-  geom_rect(show.legend = FALSE) +
-  geom_text(x = 4.5, aes(y = label_position, label = label), 
+
+p2 <- ggplot(capacity_data, aes(x = volume, y = reorder(category, volume), fill = category)) +
+  geom_col(show.legend = FALSE, width = 0.7) +
+  geom_text(aes(label = paste0(volume, " m³")), hjust = -0.1, 
             size = 5, fontface = "bold", color = "#333333") +
   scale_fill_manual(values = capacity_data$color) +
-  coord_polar(theta = "y") +
-  xlim(c(2, 4.5)) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
   labs(title = "Production Capacity",
-       subtitle = "Total: 760 m³") +
-  theme_void() +
+       subtitle = "Total: 760 m³",
+       x = NULL, y = NULL) +
+  theme_minimal(base_family = "Tsukimi-Rounded") +
   theme(
-    plot.title = element_text(face = "bold", size = 18, color = "#333333", hjust = 0.5),
-    plot.subtitle = element_text(size = 14, color = "#666666", hjust = 0.5),
-    plot.margin = margin(20, 20, 20, 20)
+    plot.title = element_text(face = "bold", size = 18, color = "#333333", hjust = 0),
+    plot.subtitle = element_text(size = 14, color = "#666666", hjust = 0, margin = margin(b = 15)),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    plot.background = element_rect(fill = "#F1F7FA", color = NA),
+    panel.background = element_rect(fill = "#F1F7FA", color = NA)
   )
-
 # 3. Annual Output (Single large metric)
 output_plot <- ggplot() +
   annotate("text", x = 0.5, y = 0.7, 
@@ -102,7 +145,10 @@ output_plot <- ggplot() +
   theme_void() +
   theme(
     plot.title = element_text(face = "bold", size = 18, color = "#333333", hjust = 0.5),
-    plot.margin = margin(20, 20, 20, 20)
+    plot.margin = margin(20, 20, 20, 20),
+        plot.background = element_rect(fill = "#F1F7FA", color = NA),
+    panel.background = element_rect(fill = "#F1F7FA", color = NA),
+    legend.background = element_rect(fill = "#F1F7FA", color = NA)
   ) +
   xlim(0, 1) + ylim(0, 1)
 
@@ -121,10 +167,6 @@ p2
 output_plot
 ```
 
-## **Technology That Stands Out**
-
-Walking through their production areas, I was particularly impressed by their Flow Chemistry Technology and High Pressure Hydrogenators (capable of reaching 60 bar). Real-time monitoring systems track hundreds of process parameters continuously across all lines.
-
 ## **Global Reach, Italian Roots**
 
 Acquired by a Japanese company in 2006, PROCOS maintains its headquarters and R&D center here in Italy while operating sales offices across five continents.\
@@ -132,13 +174,11 @@ Acquired by a Japanese company in 2006, PROCOS maintains its headquarters and R&
 ```{r}
 #| echo: false
 
-# PROCOS Global Office Connection Map
-# Install required packages if needed:
-# install.packages(c("maps", "geosphere"))
-
 library(geosphere)
 library(maps)
-library(ggrepel)
+library(showtext)
+
+
 
 # Define office locations
 locations <- data.frame(
@@ -155,7 +195,6 @@ sales_idx <- which(locations$type == "Sales")
 
 # Generate great circle routes
 all_routes <- data.frame()
-
 for(i in sales_idx) {
   route <- gcIntermediate(
     c(locations$lon[hq_idx], locations$lat[hq_idx]),
@@ -170,11 +209,14 @@ for(i in sales_idx) {
 }
 
 # Create the map
-par(mar = c(0, 0, 2, 0), bg = "#f0f0f0")
+#Margin parameter
+par(mar = c(0, 0, 4, 0),
+        oma = c(0, 0, 0, 0),  # Outer margins
+    bg = "#F1F7FA", family = "Tsukimi-Rounded")
 
 # Plot base world map
 maps::map(database = "world", col = "#e8e8e8", fill = TRUE, border = "#cccccc", 
-    ylim = c(10, 70), xlim = c(-100, 150))
+    ylim = c(0, 70), xlim = c(-100, 150))
 
 # Add connection lines
 for(group in unique(all_routes$group)) {
@@ -189,20 +231,28 @@ points(locations$lon[hq_idx], locations$lat[hq_idx],
 points(locations$lon[sales_idx], locations$lat[sales_idx], 
        pch = 21, cex = 2, col = "#7C563A", bg = "#7C563A", lwd = 2)
 
-# Add labels
-text(locations$lon[hq_idx], locations$lat[hq_idx], 
-     labels = "Italy\n(HQ/R&D/Factory)", 
-     pos = 1, cex = 0.75, font = 2, col = "#61A60E")
+# Add labels with flags and adjusted positions
+# Italy - moved down to avoid overlap
+text(locations$lon[hq_idx], locations$lat[hq_idx] - 10, 
+     labels = paste0(locations$flag[hq_idx], " Italy\n(HQ/R&D/Factory)"), 
+     cex = 0.8, font = 2, col = "#61A60E", family = "Tsukimi-Rounded", )
 
+# Sales offices with flags
 for(i in sales_idx) {
-  text(locations$lon[i], locations$lat[i], 
-       labels = paste0(locations$city[i], "\n(Sales)"), 
-       pos = 3, cex = 0.7, col = "#7C563A")
+  # Adjust position for each city to avoid overlap
+  pos_adjust <- if(locations$city[i] == "Germany") 2 else 3
+  offset <- if(locations$city[i] == "Slovakia") 4 else 2
+  
+  text(locations$lon[i], locations$lat[i] + offset, 
+       labels = paste0( " ", locations$city[i], "\n(Sales)"), 
+       pos = pos_adjust, font = 2, cex = 0.7, col = "#7C563A", 
+       family = "Tsukimi-Rounded")
 }
 
 # Add title
 title(main = "PROCOS Global Office Network", 
-      cex.main = 1.5, font.main = 2, col.main = "#333333")
+      cex.main = 1.5, font.main = 2, col.main = "#333333",
+      family = "Tsukimi-Rounded")
 
 # Add legend
 legend("bottomleft", 
@@ -214,7 +264,10 @@ legend("bottomleft",
        pt.cex = c(2, 1.5, NA),
        lwd = c(2, 2, 1.5),
        bty = "n",
-       cex = 0.8)
+       cex = 0.8,
+       text.font = 1,
+       inset = c(0.01, 0.01)
+       )
 ```
 
 ## **Looking Forward**
