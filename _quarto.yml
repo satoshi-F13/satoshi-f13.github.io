@@ -21,6 +21,11 @@ website:
       - text: "{{< iconify simple-icons:bluesky >}}"
         href: https://bsky.app/profile/s-mazmoto.bsky.social
         aria-label: Bluesky
+
+  page-footer:
+    left: "© Copyright 2025, Satoshi Matsumoto"
+    right: "Built with [Quarto](https://quarto.org/)"
+    
 format:
   html:
     theme:

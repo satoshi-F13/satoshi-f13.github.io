@@ -178,8 +178,6 @@ library(geosphere)
 library(maps)
 library(showtext)
 
-
-
 # Define office locations
 locations <- data.frame(
   city = c("Italy", "New York", "Germany", "Slovakia", "India", "Tokyo"),
@@ -207,6 +205,14 @@ for(i in sales_idx) {
   route$group <- paste(locations$city[hq_idx], locations$city[i], sep = "-")
   all_routes <- rbind(all_routes, route)
 }
+
+# ============ START PNG EXPORT ============
+# Open PNG device
+png(filename = "procos_global_network.png",
+    width = 3000,      # Width in pixels
+    height = 2000,     # Height in pixels
+    res = 300)         # Resolution (DPI)
+
 
 # Create the map
 #Margin parameter
@@ -268,6 +274,14 @@ legend("bottomleft",
        text.font = 1,
        inset = c(0.01, 0.01)
        )
+# Close the PNG device - THIS IS IMPORTANT!
+dev.off()
+# ============ END PNG EXPORT ============
+
+# The file will be saved in your working directory
+# Check where it saved:
+print(paste("File saved to:", getwd()))
+
 ```
 
 ## **Looking Forward**
