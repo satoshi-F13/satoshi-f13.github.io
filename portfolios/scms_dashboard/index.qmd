@@ -1,0 +1,124 @@
+---
+title: "Building a Supply Chain Performance Dashboard: A USAID Case Study"
+author: "Satoshi Matsumoto"
+date: "2025-10-15"
+categories: [dashboard, supply-chain, analysis, meeting-topics]
+image: "image.png"
+format:
+  html:
+    css: styles.css
+    page-layout: full
+---
+
+## Introduction
+
+This case study details the development of an interactive supply chain performance dashboard using [USAID's pharmaceutical distribution data from 2006 to 2015](https://www.kaggle.com/datasets/divyeshardeshana/supply-chain-shipment-pricing-data). The dataset, publicly available on [Kaggle](https://www.kaggle.com/datasets/divyeshardeshana/supply-chain-shipment-pricing-data), provided a rich foundation for analyzing global medical supply chain operations during a critical decade of international health aid.test test
+
+## Dashboard
+
+::: column-screen
+<iframe src="https://satoshi-f13.github.io/usaid-scms-dashboard/dashboard.html" style="width: 100%; height: 800px; border: none; min-height: 80vh;">
+
+</iframe>
+:::
+
+## Motivation
+
+The primary goal of this project was two.\
+At first, to demonstrate proficiency in building supply chain dashboards and to uncover insights from USAID's pharmaceutical distribution patterns. I was particularly interested in understanding how medical products, especially HIV and malaria medications, were distributed globally and which vendors played crucial roles in this humanitarian supply chain.
+
+## Analysis Approach
+
+### Geographical Distribution Analysis
+
+The geographic analysis revealed fascinating patterns in [USAID](https://www.usaid.gov/)'s distribution network. The data showed concentrated support in South, East, and West African regions, where HIV and malaria medicines were most critically needed. By visualizing shipment values on an interactive map, stakeholders can immediately identify:
+
+-   Countries receiving the largest volumes of medical support
+-   Regional distribution patterns and potential gaps in coverage
+-   Underserved areas that might benefit from increased support, such as Caribbean nations
+
+### Vendor Performance Evaluation
+
+I developed a comprehensive vendor ranking system that evaluates suppliers across multiple dimensions:
+
+-   **Volume metrics**: Total shipments handled
+
+-   **Financial metrics**: Total value of products delivered
+
+-   **Delivery performance**: On-time delivery rates and average delays
+
+-   **Product portfolio diversity**: Range of medical products supplied
+
+The top 15 vendor performance ranking reveals which pharmaceutical suppliers were most influential in USAID's operations between 2006 and 2015, providing valuable insights for strategic partnership decisions.
+
+### Product Portfolio Analysis
+
+The analysis examined the diversity and distribution of medical products, focusing on critical categories like antiretrovirals, antimalarials, and essential medicines. This helps identify supply chain strengths and potential vulnerabilities in product availability.
+
+## Key Features
+
+To enhance user experience and accessibility, I implemented a reference navigation tab that explains:
+
+-   Medical product abbreviations and classifications
+
+-   Logistics terminology and supply chain metrics
+
+-   Key performance indicators and their calculations
+
+This feature ensures that both technical and non-technical stakeholders can effectively interpret the dashboard.
+
+## Technical Implementation
+
+The dashboard successfully integrates into this blog using iframe embedding, providing a seamless user experience without requiring separate browser windows. This technical approach demonstrates the value of modern web technologies in making data analysis accessible and shareable.
+
+## Lessons Learned
+
+### The Power of Visualization
+
+Transforming numerical datasets into interactive visualizations dramatically improved understanding of: - Key players in the global medical supply chain - Regional distribution patterns and potential improvement areas - Vendor performance comparisons at a glance
+
+The dashboard format enables easy sharing with stakeholders, facilitating data-driven discussions about supply chain optimization and strategic planning.
+
+### Technical Challenges and Solutions
+
+**Data Interpretation Pitfalls**: Initially, I misconnected vendor information with country data, leading to confusion about pharmaceutical company locations. This error highlighted the importance of thorough data validation—I initially wondered why so many pharmaceutical companies appeared to be based in African countries, Kazakhstan, and Vietnam before realizing my mapping error.
+
+**EDA Complexity**: The exploratory data analysis phase proved challenging with numerous variables and potential visualizations. I occasionally lost focus amid the possibilities, emphasizing the need for clear analytical objectives.
+
+**Performance Metrics Calibration**: Creating meaningful performance scores required careful consideration. Initial calculations produced counterintuitive results like 6000% efficiency scores. Through iterative refinement, I developed a normalized scoring system that weighs three key factors:
+
+-   Volume performance
+
+-   Price competitiveness
+
+-   Delivery reliability (measured by shipment delays)
+
+This balanced approach produces scores that stakeholders can intuitively understand and act upon.
+
+## Future Enhancements
+
+From a business perspective, several analytical expansions could provide additional value:
+
+### Trend Analysis
+
+Examining the last three years of the dataset in detail could reveal: - Emerging distribution patterns - Seasonal fluctuations in demand - Vendor performance trajectories
+
+### Delivery Optimization
+
+Deep-diving into delivery performance could identify opportunities to:
+
+-   Reduce unnecessary logistics costs
+
+-   Minimize critical delays that risk medicine expiration
+
+-   Strengthen negotiations with courier services and freight forwarders
+
+By quantifying delays for high-volume products and presenting data-driven evidence, procurement teams could engage logistics partners in meaningful discussions about service improvements. When buyers can demonstrate impact through clear visualizations—showing exactly which products face delays and their financial implications—logistics companies are more likely to take corrective action seriously.
+
+## Conclusion
+
+This project demonstrates how modern data visualization techniques can transform complex supply chain data into actionable insights. The USAID dashboard not only showcases technical capabilities but also provides genuine value for understanding and optimizing humanitarian medical supply chains. The combination of geographic analysis, vendor performance metrics, and product portfolio insights creates a comprehensive tool for strategic decision-making in global health logistics.
+
+The experience reinforced that effective data visualization requires both technical skill and domain understanding—knowing not just how to display data, but what displays will drive meaningful action. As supply chains become increasingly complex and global, tools like this dashboard become essential for maintaining efficiency and ensuring that critical medical supplies reach those who need them most.
+
+The dashboard is made by [Quarto](https://quarto.org/docs/dashboards/).

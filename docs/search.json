@@ -25,7 +25,7 @@
     "href": "portfolio.html",
     "title": "Portfolio",
     "section": "",
-    "text": "Analysis of 1 Million Sales Data\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
+    "text": "Supply-Chain Performance Dashboard\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 15, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -89,5 +89,75 @@
     "title": "Factory Open Day - PROCOS",
     "section": "",
     "text": "According to the news article, in the Osaka EXPO 2025, the company announced a bold €150 million investment plan over the next 8 years—a clear signal of their commitment to expanding capacity and technological capabilities in the specialty pharmaceutical chemicals sector.\n\nEight decades of chemistry excellence, and they’re getting started to their GRIT-Future."
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#dashboard",
+    "href": "portfolios/scms_dashboard/index.html#dashboard",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Dashboard",
+    "text": "Dashboard"
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html",
+    "href": "portfolios/scms_dashboard/index.html",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "",
+    "text": "This case study details the development of an interactive supply chain performance dashboard using USAID’s pharmaceutical distribution data from 2006 to 2015. The dataset, publicly available on Kaggle, provided a rich foundation for analyzing global medical supply chain operations during a critical decade of international health aid.test test"
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#introduction",
+    "href": "portfolios/scms_dashboard/index.html#introduction",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "",
+    "text": "This case study details the development of an interactive supply chain performance dashboard using USAID’s pharmaceutical distribution data from 2006 to 2015. The dataset, publicly available on Kaggle, provided a rich foundation for analyzing global medical supply chain operations during a critical decade of international health aid.test test"
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#motivation",
+    "href": "portfolios/scms_dashboard/index.html#motivation",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Motivation",
+    "text": "Motivation\nThe primary goal of this project was two.\nAt first, to demonstrate proficiency in building supply chain dashboards and to uncover insights from USAID’s pharmaceutical distribution patterns. I was particularly interested in understanding how medical products, especially HIV and malaria medications, were distributed globally and which vendors played crucial roles in this humanitarian supply chain."
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#analysis-approach",
+    "href": "portfolios/scms_dashboard/index.html#analysis-approach",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Analysis Approach",
+    "text": "Analysis Approach\n\nGeographical Distribution Analysis\nThe geographic analysis revealed fascinating patterns in USAID’s distribution network. The data showed concentrated support in South, East, and West African regions, where HIV and malaria medicines were most critically needed. By visualizing shipment values on an interactive map, stakeholders can immediately identify:\n\nCountries receiving the largest volumes of medical support\nRegional distribution patterns and potential gaps in coverage\nUnderserved areas that might benefit from increased support, such as Caribbean nations\n\n\n\nVendor Performance Evaluation\nI developed a comprehensive vendor ranking system that evaluates suppliers across multiple dimensions:\n\nVolume metrics: Total shipments handled\nFinancial metrics: Total value of products delivered\nDelivery performance: On-time delivery rates and average delays\nProduct portfolio diversity: Range of medical products supplied\n\nThe top 15 vendor performance ranking reveals which pharmaceutical suppliers were most influential in USAID’s operations between 2006 and 2015, providing valuable insights for strategic partnership decisions.\n\n\nProduct Portfolio Analysis\nThe analysis examined the diversity and distribution of medical products, focusing on critical categories like antiretrovirals, antimalarials, and essential medicines. This helps identify supply chain strengths and potential vulnerabilities in product availability."
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#key-features",
+    "href": "portfolios/scms_dashboard/index.html#key-features",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Key Features",
+    "text": "Key Features\nTo enhance user experience and accessibility, I implemented a reference navigation tab that explains:\n\nMedical product abbreviations and classifications\nLogistics terminology and supply chain metrics\nKey performance indicators and their calculations\n\nThis feature ensures that both technical and non-technical stakeholders can effectively interpret the dashboard."
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#technical-implementation",
+    "href": "portfolios/scms_dashboard/index.html#technical-implementation",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Technical Implementation",
+    "text": "Technical Implementation\nThe dashboard successfully integrates into this blog using iframe embedding, providing a seamless user experience without requiring separate browser windows. This technical approach demonstrates the value of modern web technologies in making data analysis accessible and shareable."
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#lessons-learned",
+    "href": "portfolios/scms_dashboard/index.html#lessons-learned",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Lessons Learned",
+    "text": "Lessons Learned\n\nThe Power of Visualization\nTransforming numerical datasets into interactive visualizations dramatically improved understanding of: - Key players in the global medical supply chain - Regional distribution patterns and potential improvement areas - Vendor performance comparisons at a glance\nThe dashboard format enables easy sharing with stakeholders, facilitating data-driven discussions about supply chain optimization and strategic planning.\n\n\nTechnical Challenges and Solutions\nData Interpretation Pitfalls: Initially, I misconnected vendor information with country data, leading to confusion about pharmaceutical company locations. This error highlighted the importance of thorough data validation—I initially wondered why so many pharmaceutical companies appeared to be based in African countries, Kazakhstan, and Vietnam before realizing my mapping error.\nEDA Complexity: The exploratory data analysis phase proved challenging with numerous variables and potential visualizations. I occasionally lost focus amid the possibilities, emphasizing the need for clear analytical objectives.\nPerformance Metrics Calibration: Creating meaningful performance scores required careful consideration. Initial calculations produced counterintuitive results like 6000% efficiency scores. Through iterative refinement, I developed a normalized scoring system that weighs three key factors:\n\nVolume performance\nPrice competitiveness\nDelivery reliability (measured by shipment delays)\n\nThis balanced approach produces scores that stakeholders can intuitively understand and act upon."
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#future-enhancements",
+    "href": "portfolios/scms_dashboard/index.html#future-enhancements",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Future Enhancements",
+    "text": "Future Enhancements\nFrom a business perspective, several analytical expansions could provide additional value:\n\nTrend Analysis\nExamining the last three years of the dataset in detail could reveal: - Emerging distribution patterns - Seasonal fluctuations in demand - Vendor performance trajectories\n\n\nDelivery Optimization\nDeep-diving into delivery performance could identify opportunities to:\n\nReduce unnecessary logistics costs\nMinimize critical delays that risk medicine expiration\nStrengthen negotiations with courier services and freight forwarders\n\nBy quantifying delays for high-volume products and presenting data-driven evidence, procurement teams could engage logistics partners in meaningful discussions about service improvements. When buyers can demonstrate impact through clear visualizations—showing exactly which products face delays and their financial implications—logistics companies are more likely to take corrective action seriously."
+  },
+  {
+    "objectID": "portfolios/scms_dashboard/index.html#conclusion",
+    "href": "portfolios/scms_dashboard/index.html#conclusion",
+    "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis project demonstrates how modern data visualization techniques can transform complex supply chain data into actionable insights. The USAID dashboard not only showcases technical capabilities but also provides genuine value for understanding and optimizing humanitarian medical supply chains. The combination of geographic analysis, vendor performance metrics, and product portfolio insights creates a comprehensive tool for strategic decision-making in global health logistics.\nThe experience reinforced that effective data visualization requires both technical skill and domain understanding—knowing not just how to display data, but what displays will drive meaningful action. As supply chains become increasingly complex and global, tools like this dashboard become essential for maintaining efficiency and ensuring that critical medical supplies reach those who need them most."
   }
 ]

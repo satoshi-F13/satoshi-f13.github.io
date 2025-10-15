@@ -2,6 +2,7 @@
   {
     "listing": "/portfolio.html",
     "items": [
+      "/portfolios/scms_dashboard/index.html",
       "/portfolios/1m_sales_forecast/index.html",
       "/portfolios/order_app_case/index.html"
     ]

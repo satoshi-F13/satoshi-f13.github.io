@@ -6,7 +6,7 @@ categories: [news, code, analysis]
 image: "image.jpg"
 ---
 
-This was a case study using ROSSMANN public data for sales predictions. \
+This was a case study using ROSSMANN public data for sales predictions.\
 
-```{}
+```         
 ```
