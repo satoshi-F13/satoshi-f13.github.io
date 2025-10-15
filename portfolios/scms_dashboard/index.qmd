@@ -121,4 +121,4 @@ This project demonstrates how modern data visualization techniques can transform
 
 The experience reinforced that effective data visualization requires both technical skill and domain understanding—knowing not just how to display data, but what displays will drive meaningful action. As supply chains become increasingly complex and global, tools like this dashboard become essential for maintaining efficiency and ensuring that critical medical supplies reach those who need them most.
 
-The dashboard is made by [Quarto](https://quarto.org/docs/dashboards/).
+The dashboard is build with [Quarto](https://quarto.org/docs/dashboards/).
