@@ -2,11 +2,28 @@
 title: "Analysis of 1 Million Sales Data"
 author: "Satoshi Matsumoto"
 date: "2025-10-06"
-categories: [news, code, analysis]
-image: "image.jpg"
+categories: [Sales Analysis, Sales Forecast, Big Data]
+image: "rossmann_dashboard.png"
 ---
 
-This was a case study using ROSSMANN public data for sales predictions.\
+![Rossmann Logo](https://upload.wikimedia.org/wikipedia/commons/7/7c/Logo_rossmann_2024.svg)
 
-```         
-```
+### My Challenge
+
+Processing 1 million+ records from 1,115 Rossmann stores pushed both my laptop and analytical skills to their limits. I tackled this [2015 Kaggle competition](https://www.kaggle.com/competitions/rossmann-store-sales/data) to explore a critical question: how much does data volume actually impact prediction accuracy? The challenge involved comparing model performance between a small sample (1K records) and the full dataset (1M+ records) while optimizing for RMSPE (Root Mean Square Percentage Error) - the key metric Rossmann uses to measure forecast accuracy across their German drugstore chain.
+
+### Project
+
+Built a comprehensive sales forecasting model to predict 6 weeks of future sales for Rossmann stores, originally designed to reduce analytical burden on individual store managers. The project involved extensive feature engineering from store characteristics, promotional calendars, and historical sales patterns. I implemented gradient boosting algorithms, handled missing values and outliers, and created time-series features to capture seasonal trends and holiday effects that significantly impact retail sales in Germany.
+
+### Results
+
+**38.9 percentage point improvement** achieved by training on the full dataset - small data (1K records) yielded 50.91% RMSPE while the full dataset achieved **12% RMSPE**, approaching the competition winner's 10%. This dramatic difference validated a fundamental principle: in predictive modeling, data volume often outweighs algorithm sophistication. The intensive computational load taught me valuable lessons about memory management and optimization techniques essential for real-world big data applications. While I didn't win the competition, achieving near-competitive results reinforced the importance of systematic feature engineering and proper validation strategies.
+
+**Tech Stack:** R, XGBoost, Shiny, Quarto
+
+**Dataset Scale:** 1,017,209 records \| 1,115 stores \| 41,088 test predictions
+
+**Key Achievement:** Demonstrated 75% error reduction through big data utilization
+
+![](rossmann_sales_dashboard.gif)

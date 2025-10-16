@@ -1,0 +1,12 @@
+---
+title: "Case Studies"
+listing:
+  contents: 
+    - "*/index.qmd"  # List all project folders
+  type: grid         # Grid layout instead of default
+  grid-columns: 3    # 3 columns on desktop
+  page-size: 9       # Items per page
+  categories: true  # Hide categories if not needed
+  sort: "date desc"  # Sort by date
+  fields: [image, title, categories, description]  # What to show
+---

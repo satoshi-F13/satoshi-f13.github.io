@@ -1,12 +1,23 @@
 ---
-title: "Welcome To My Blog"
+title: "Order Managemet App"
 author: "Satoshi Matsumoto"
 date: "2025-10-03"
-categories: [news]
+categories: [Shiny, Sales Analysis, Dashboard, Interactive]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+![](order_app_image.jpg)
 
-![](thumbnail.jpg)
+### My Challenge
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+In September, I volunteered at a local BBQ festival ("Sagra") in Piedmont, Italy, where hundreds of orders were being managed with paper and pen. As both developer and cashier, I faced a unique challenge: transform a chaotic manual system into a digital solution with zero budget, while actively using it under pressure. The real test came when WiFi collapsed during peak hours, fonts were unreadable in sunlight, and cooks needed to add new dishes on the fly.
+
+### Project
+
+I developed a real-time order management web app that evolved throughout the event based on immediate feedback. The system featured an intuitive ordering interface, automatic order summaries, visual analytics with pie charts distinguishing dine-in vs takeaway orders, and Excel export functionality for post-event analysis. During the two-day festival, I implemented critical updates live - tripling font sizes for readability, adding batch order handling for large groups, and creating a dashboard that helped organizers make real-time decisions about inventory and pricing.
+
+### Results
+
+**202 orders processed** without a single calculation error, **€9,900 in sales** managed seamlessly, and **zero food waste** thanks to data-driven decisions. The app reduced average order processing time from 3 minutes to 45 seconds, while providing organizers with instant insights that changed their sales strategy mid-event. Most importantly, this field test revealed that the best software development happens when you're not just the developer, but also the end user under real pressure. The experience taught me that true UX isn't about aesthetics - it's about survival when there's a line of hungry customers waiting.
+
+![](bbq_app_dashboard.gif)\
+\

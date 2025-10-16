@@ -25,7 +25,7 @@
     "href": "portfolio.html",
     "title": "Portfolio",
     "section": "",
-    "text": "Building a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\nOct 15, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
+    "text": "Case Studies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\nOct 15, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -44,16 +44,16 @@
   {
     "objectID": "portfolios/order_app_case/index.html",
     "href": "portfolios/order_app_case/index.html",
-    "title": "Welcome To My Blog",
+    "title": "Order Managemet App",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "My Challenge\nIn September, I volunteered at a local BBQ festival (“Sagra”) in Piedmont, Italy, where hundreds of orders were being managed with paper and pen. As both developer and cashier, I faced a unique challenge: transform a chaotic manual system into a digital solution with zero budget, while actively using it under pressure. The real test came when WiFi collapsed during peak hours, fonts were unreadable in sunlight, and cooks needed to add new dishes on the fly.\n\n\nProject\nI developed a real-time order management web app that evolved throughout the event based on immediate feedback. The system featured an intuitive ordering interface, automatic order summaries, visual analytics with pie charts distinguishing dine-in vs takeaway orders, and Excel export functionality for post-event analysis. During the two-day festival, I implemented critical updates live - tripling font sizes for readability, adding batch order handling for large groups, and creating a dashboard that helped organizers make real-time decisions about inventory and pricing.\n\n\nResults\n202 orders processed without a single calculation error, €9,900 in sales managed seamlessly, and zero food waste thanks to data-driven decisions. The app reduced average order processing time from 3 minutes to 45 seconds, while providing organizers with instant insights that changed their sales strategy mid-event. Most importantly, this field test revealed that the best software development happens when you’re not just the developer, but also the end user under real pressure. The experience taught me that true UX isn’t about aesthetics - it’s about survival when there’s a line of hungry customers waiting."
   },
   {
     "objectID": "portfolios/1m_sales_forecast/index.html",
     "href": "portfolios/1m_sales_forecast/index.html",
     "title": "Analysis of 1 Million Sales Data",
     "section": "",
-    "text": "This was a case study using ROSSMANN public data for sales predictions."
+    "text": "Rossmann Logo\n\n\n\nMy Challenge\nProcessing 1 million+ records from 1,115 Rossmann stores pushed both my laptop and analytical skills to their limits. I tackled this 2015 Kaggle competition to explore a critical question: how much does data volume actually impact prediction accuracy? The challenge involved comparing model performance between a small sample (1K records) and the full dataset (1M+ records) while optimizing for RMSPE (Root Mean Square Percentage Error) - the key metric Rossmann uses to measure forecast accuracy across their German drugstore chain.\n\n\nProject\nBuilt a comprehensive sales forecasting model to predict 6 weeks of future sales for Rossmann stores, originally designed to reduce analytical burden on individual store managers. The project involved extensive feature engineering from store characteristics, promotional calendars, and historical sales patterns. I implemented gradient boosting algorithms, handled missing values and outliers, and created time-series features to capture seasonal trends and holiday effects that significantly impact retail sales in Germany.\n\n\nResults\n38.9 percentage point improvement achieved by training on the full dataset - small data (1K records) yielded 50.91% RMSPE while the full dataset achieved 12% RMSPE, approaching the competition winner’s 10%. This dramatic difference validated a fundamental principle: in predictive modeling, data volume often outweighs algorithm sophistication. The intensive computational load taught me valuable lessons about memory management and optimization techniques essential for real-world big data applications. While I didn’t win the competition, achieving near-competitive results reinforced the importance of systematic feature engineering and proper validation strategies.\nTech Stack: R, XGBoost, Shiny, Quarto\nDataset Scale: 1,017,209 records | 1,115 stores | 41,088 test predictions\nKey Achievement: Demonstrated 75% error reduction through big data utilization"
   },
   {
     "objectID": "posts/open_day_procos/index.html",
@@ -159,5 +159,19 @@
     "title": "Building a Supply Chain Performance Dashboard: A USAID Case Study",
     "section": "Conclusion",
     "text": "Conclusion\nThis project demonstrates how modern data visualization techniques can transform complex supply chain data into actionable insights. The USAID dashboard not only showcases technical capabilities but also provides genuine value for understanding and optimizing humanitarian medical supply chains. The combination of geographic analysis, vendor performance metrics, and product portfolio insights creates a comprehensive tool for strategic decision-making in global health logistics.\nThe experience reinforced that effective data visualization requires both technical skill and domain understanding—knowing not just how to display data, but what displays will drive meaningful action. As supply chains become increasingly complex and global, tools like this dashboard become essential for maintaining efficiency and ensuring that critical medical supplies reach those who need them most.\nThe dashboard is build with Quarto."
+  },
+  {
+    "objectID": "portfolios/index.html",
+    "href": "portfolios/index.html",
+    "title": "Case Studies",
+    "section": "",
+    "text": "Building a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nSales Analysis\n\nSales Forecast\n\nBig Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Managemet App\n\n\n\nShiny\n\nSales Analysis\n\nDashboard\n\nInteractive\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "portfolios.html",
+    "href": "portfolios.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Case Studies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\nOct 15, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nSales Analysis\n\nSales Forecast\n\nBig Data\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Managemet App\n\n\n\nShiny\n\nSales Analysis\n\nDashboard\n\nInteractive\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
   }
 ]

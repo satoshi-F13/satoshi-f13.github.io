@@ -6,12 +6,12 @@ website:
   title: "Satoshi Matsumoto"
   navbar:
     left: 
-      - text: "Home"
-        file: index.qmd
-      - text: "Portfolio"
-        file: portfolio.qmd
-      - text: "Blog"
-        file: blog.qmd
+    - text: "Home"
+      file: index.qmd
+    - text: "Portfolio"
+      file: portfolios/index.qmd  # Updated path
+    - text: "Blog"
+      file: blog.qmd
     right:
       - about.qmd
       - icon: github
