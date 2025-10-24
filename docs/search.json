@@ -165,13 +165,55 @@
     "href": "portfolios/index.html",
     "title": "Case Studies",
     "section": "",
-    "text": "Building a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nSales Analysis\n\nSales Forecast\n\nBig Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Managemet App\n\n\n\nShiny\n\nSales Analysis\n\nDashboard\n\nInteractive\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Auto-Documentation for Business\n\n\n\nBusiness Inteligence\n\nAuto-Documentation\n\nClient-focused solution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nSales Analysis\n\nSales Forecast\n\nBig Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Managemet App\n\n\n\nShiny\n\nSales Analysis\n\nDashboard\n\nInteractive\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "portfolios.html",
     "href": "portfolios.html",
     "title": "Portfolio",
     "section": "",
-    "text": "Case Studies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\nOct 15, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nSales Analysis\n\nSales Forecast\n\nBig Data\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Managemet App\n\n\n\nShiny\n\nSales Analysis\n\nDashboard\n\nInteractive\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
+    "text": "Case Studies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAuto-Documentation for Business\n\n\n\nBusiness Inteligence\n\nAuto-Documentation\n\nClient-focused solution\n\n\n\n\n\n\n\n\n\nOct 24, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Supply Chain Performance Dashboard: A USAID Case Study\n\n\n\ndashboard\n\nsupply-chain\n\nanalysis\n\nmeeting-topics\n\n\n\n\n\n\n\n\n\nOct 15, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis of 1 Million Sales Data\n\n\n\nSales Analysis\n\nSales Forecast\n\nBig Data\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Managemet App\n\n\n\nShiny\n\nSales Analysis\n\nDashboard\n\nInteractive\n\n\n\n\n\n\n\n\n\nOct 3, 2025\n\n\nSatoshi Matsumoto\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "portfolios/auto_pdf_generation/index.html",
+    "href": "portfolios/auto_pdf_generation/index.html",
+    "title": "Auto-Documentation for Business",
+    "section": "",
+    "text": "The project required addressing three critical areas:\n\nDomain Understanding: Deep dive into the key factors driving industrial pump sales decisions, including efficiency metrics, energy costs, maintenance schedules, and warranty periods.\nWorkflow Simplification: Design a unified platform where users could input data, visualize results through an interactive dashboard, and generate polished documents—all without switching between applications.\nBrand Alignment: Move beyond generic Word documents to create professionally branded materials that reflect the company’s identity and enhance credibility with clients.\n\n\n\n\n\n\nSample\n\n\n\n\n\n\nAn industrial pump unit distributor faced a significant operational bottleneck. While they had strong sales strategies and client relationships, creating ROI documentation for each potential sale consumed 2-3 hours per proposal. This tedious process involved juggling multiple spreadsheets, switching between software applications, and manually formatting documents.\nThe distributor recognized that these hours could be better spent on what truly mattered: engaging with existing clients and developing new business opportunities. They needed a solution that would standardize their sales documentation without sacrificing quality or professionalism.\n\n\n\nThe implementation delivered measurable improvements:\nTime Savings: Reduced documentation time from 1-3 hours to just minutes, freeing sales staff to focus on client relationships and business development.\n\nAccessibility\nWeb-based deployment enables access from anywhere with an internet connection, supporting remote work and on-site client visits.\nStreamlined Workflow\nEliminated the need to open multiple office software applications, reducing friction and potential errors.\nProfessional Presentation\nBrand-aligned documents enhance the company’s professional image and client confidence in proposals.\n\n\n\n\nThe project showcases several key technical competencies:\n\nData Analysis in R: Processing complex industrial specifications and generating financial projections\nModern Documentation Tools: Leveraging Typst for high-quality, templated document generation\nFull-Stack Integration: Combining analytical backend with user-friendly frontend in Positron\nBusiness Intelligence: Translating technical specifications into clear, actionable business metrics\n\n\n\n\nExplore the interactive demo to see how the system works:\n\n\n\n\n\n\nThis project exemplifies my approach to data analysis: understanding the business context, applying appropriate technologies, and delivering solutions that create real value. By standardizing documentation while maintaining flexibility and professionalism, the system empowers sales teams to work more efficiently and effectively."
+  },
+  {
+    "objectID": "portfolios/auto_pdf_generation/index.html#the-challenge",
+    "href": "portfolios/auto_pdf_generation/index.html#the-challenge",
+    "title": "Auto-Documentation for Business",
+    "section": "",
+    "text": "The project required addressing three critical areas:\n\nDomain Understanding: Deep dive into the key factors driving industrial pump sales decisions, including efficiency metrics, energy costs, maintenance schedules, and warranty periods.\nWorkflow Simplification: Design a unified platform where users could input data, visualize results through an interactive dashboard, and generate polished documents—all without switching between applications.\nBrand Alignment: Move beyond generic Word documents to create professionally branded materials that reflect the company’s identity and enhance credibility with clients."
+  },
+  {
+    "objectID": "portfolios/auto_pdf_generation/index.html#the-business-problem",
+    "href": "portfolios/auto_pdf_generation/index.html#the-business-problem",
+    "title": "Auto-Documentation for Business",
+    "section": "",
+    "text": "An industrial pump unit distributor faced a significant operational bottleneck. While they had strong sales strategies and client relationships, creating ROI documentation for each potential sale consumed 2-3 hours per proposal. This tedious process involved juggling multiple spreadsheets, switching between software applications, and manually formatting documents.\nThe distributor recognized that these hours could be better spent on what truly mattered: engaging with existing clients and developing new business opportunities. They needed a solution that would standardize their sales documentation without sacrificing quality or professionalism."
+  },
+  {
+    "objectID": "portfolios/auto_pdf_generation/index.html#key-results",
+    "href": "portfolios/auto_pdf_generation/index.html#key-results",
+    "title": "Auto-Documentation for Business",
+    "section": "",
+    "text": "The implementation delivered measurable improvements:\nTime Savings: Reduced documentation time from 1-3 hours to just minutes, freeing sales staff to focus on client relationships and business development.\n\nAccessibility\nWeb-based deployment enables access from anywhere with an internet connection, supporting remote work and on-site client visits.\nStreamlined Workflow\nEliminated the need to open multiple office software applications, reducing friction and potential errors.\nProfessional Presentation\nBrand-aligned documents enhance the company’s professional image and client confidence in proposals."
+  },
+  {
+    "objectID": "portfolios/auto_pdf_generation/index.html#technical-implementation",
+    "href": "portfolios/auto_pdf_generation/index.html#technical-implementation",
+    "title": "Auto-Documentation for Business",
+    "section": "",
+    "text": "The project showcases several key technical competencies:\n\nData Analysis in R: Processing complex industrial specifications and generating financial projections\nModern Documentation Tools: Leveraging Typst for high-quality, templated document generation\nFull-Stack Integration: Combining analytical backend with user-friendly frontend in Positron\nBusiness Intelligence: Translating technical specifications into clear, actionable business metrics"
+  },
+  {
+    "objectID": "portfolios/auto_pdf_generation/index.html#try-it-yourself",
+    "href": "portfolios/auto_pdf_generation/index.html#try-it-yourself",
+    "title": "Auto-Documentation for Business",
+    "section": "",
+    "text": "Explore the interactive demo to see how the system works:\n\n\n\n\n\n\nThis project exemplifies my approach to data analysis: understanding the business context, applying appropriate technologies, and delivering solutions that create real value. By standardizing documentation while maintaining flexibility and professionalism, the system empowers sales teams to work more efficiently and effectively."
   }
 ]

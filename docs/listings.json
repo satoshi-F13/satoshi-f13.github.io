@@ -17,6 +17,7 @@
   {
     "listing": "/portfolios/index.html",
     "items": [
+      "/portfolios/auto_pdf_generation/index.html",
       "/portfolios/scms_dashboard/index.html",
       "/portfolios/1m_sales_forecast/index.html",
       "/portfolios/order_app_case/index.html"
@@ -26,6 +27,7 @@
     "listing": "/portfolios.html",
     "items": [
       "/portfolios/index.html",
+      "/portfolios/auto_pdf_generation/index.html",
       "/portfolios/scms_dashboard/index.html",
       "/portfolios/1m_sales_forecast/index.html",
       "/portfolios/order_app_case/index.html"
