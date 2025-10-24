@@ -7,6 +7,10 @@ categories: [Business Inteligence, Auto-Documentation, Client-focused solution]
 
 # Streamlining Industrial Sales with Data-Driven Solutions
 
+## Overview
+
+As a data analyst, I developed an automated documentation system that transforms how industrial pump distributors create sales proposals. This project demonstrates my ability to bridge technical skills with real-world business challenges, delivering tangible time savings and professional results.
+
 ::::: columns
 ::: {.column width="60%"}
 ## The Challenge
